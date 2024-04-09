@@ -12,7 +12,9 @@
 body {
     background: var(--header-color);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 header{
@@ -97,6 +99,11 @@ header ul li a:hover{
     height: 13rem;
 }
 
+main.container {
+    background: var(--header-color);
+    padding: 20px;
+}
+
 .index-footer{
     background: var(--header-color);
     text-align: center;
@@ -146,17 +153,6 @@ hero img{
     text-transform:lowercase;
 }
 
-.icons {
-    position: absolute;
-    top: 50%;
-    right: 30px;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
 .project-btn {
     border: 2px solid #1d1b1b;
     font-size: 40px;
@@ -183,6 +179,16 @@ button a{
 .project-btn:hover{
     transform: translateX(10px);
     background:rgb(0, 0, 0);
+}
+.icons {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .icons li {
@@ -288,13 +294,14 @@ button a{
         margin: 20px;
     }
     .logo {
-        font-size: 1rem;
+        font-size: 0.8rem;
         position: relative;
         right: 70px;
 
     }
     header ul li a{
         font-size: .75rem;
+        margin: 0 15px;
     }
     .project-cards{
         width: 300px;
@@ -321,6 +328,13 @@ button a{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    footer {
+        display: none;
+    }
+    .icons {
+        top: 78%;
+        left: 92%;
     }
    
 }
